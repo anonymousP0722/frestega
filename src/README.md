@@ -19,5 +19,5 @@ python baselines/setup.py build_ext --inplace
 ### Run the Application
 To execute the program, use:
 ```shell
-python generate_data_new.py --secret_bits_file bit_stream.txt --gpuid 1 --generate_num 10
+python frestega/grestega.py --secret_bits_file bit_stream.txt --gpuid 1 --generate_num 10
 ```
