@@ -1,0 +1,10 @@
+{
+  "model_name_or_path":"/data1/预训练模型/Llama3-8B-Chinese-Chat",
+  "precision": "all",
+  "topk":0,
+  "role":"user",
+  "prompt_template":"chat",
+  "max_new_tokens":256,
+  "prompt":"你是一个小红书博主，介绍一下日本旅游"
+  }
+  

@@ -1,0 +1,10 @@
+{
+  "model_name_or_path":"/data1/lgrchatglm3-6b",
+  "precision": "all",
+  "topk":0,
+  "role":"user",
+  "prompt_template":"chat",
+  "max_new_tokens":32,
+  "prompt":"Generate a user review for the movie in one sentence, without including the movie title."
+  }
+  

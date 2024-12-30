@@ -1,0 +1,9 @@
+{
+  "model_name_or_path":"/data1/预训练模型/Mistral-7B-Instruct-v0.3",
+  "precision": "full",
+  "topk":0,
+  "role":"user",
+  "prompt_template":"chat",
+  "max_new_tokens":64,
+  "prompt":"写一篇小红书风格的帖子"
+  }
