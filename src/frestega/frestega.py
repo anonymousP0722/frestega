@@ -115,13 +115,13 @@ def embed_single(model, tokenizer, bit_stream,
             log_prob -= log_prob.max()
             prob = torch.exp(log_prob).reshape(-1)
 
-            #开始fremax
+            
             cal_prob=prob/prob.sum()
             
             initial_entropy.append(calculate_entropy(cal_prob))
             
             
-            #先时间
+            
             t = (args.baseT + args.theta * np.log(1 + args.c * calculate_entropy(cal_prob)))
             temperature.append(t)
             
@@ -137,7 +137,7 @@ def embed_single(model, tokenizer, bit_stream,
             
             
 
-             #再空间
+             
             tmp_frequency = frequency.copy()
             tmp_model_frequency = model_frequency.copy()
 
@@ -147,7 +147,7 @@ def embed_single(model, tokenizer, bit_stream,
             tmp_frequency = tmp_frequency / np.sum(tmp_frequency)
             tmp_model_frequency = tmp_model_frequency / np.sum(tmp_model_frequency)
 
-            # # 重复惩罚
+            
             for i in x[0]:
                 tmp_frequency[i] = math.sqrt(tmp_frequency[i])
             
