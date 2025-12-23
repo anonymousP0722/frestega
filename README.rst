@@ -1,5 +1,5 @@
 ========
-FreStega: A Plug-and-Play Remedy for Imperceptibility and Capacity Enhancement in Real-World Generative Linguistic Steganography
+A Plug-and-Play Method for Improving Imperceptibility and Capacity in Practical Generative Text Steganography
 ========
 
 
@@ -24,7 +24,7 @@ Requirements:
 python==3.12.7; transformers==4.40.1
 
 Dataset:
-IMDB ,XHS ,Shakespeare
+IMDB, XHS, Shakespeare
 
 Code:
 See /src/frestega/frestega.py 
